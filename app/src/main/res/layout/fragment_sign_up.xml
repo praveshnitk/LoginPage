@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.loginpage.SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/radioCreate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Carete An Account"
+                />
+
+        <EditText
+            android:id="@+id/sUpName"
+            android:layout_marginTop="0dp"
+            android:hint="UserName"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:singleLine="true"/>
+        <EditText
+            android:id="@+id/sUpPassword"
+            android:layout_marginTop="20dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:singleLine="true"/>
+        <EditText
+            android:id="@+id/sUpcnfpasswrd"
+            android:layout_marginTop="20dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:singleLine="true"/>
+
+        <Spinner
+
+            android:layout_marginTop="15dp"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:id="@+id/sUpSpinner" />
+        <EditText
+            android:layout_marginTop="15dp"
+            android:id="@+id/sUpSecurityAnswer"
+            android:hint="Security Answer"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:singleLine="true"/>
+        <Button
+            android:layout_marginTop="40dp"
+            android:layout_width="290dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:text="Create"
+            android:id="@+id/sUpCreateNewAccount"
+            android:layout_margin="35dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            android:background="@color/colorAccent"
+            />
+    </LinearLayout>
+
+</FrameLayout>

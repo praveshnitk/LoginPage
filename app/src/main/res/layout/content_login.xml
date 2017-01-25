@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dell.loginpage.LoginActivity"
+    tools:showIn="@layout/activity_login">
+    <LinearLayout
+        android:id="@+id/loginLinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:textSize="30dp"
+        android:text="Welcome" />
+        <!--<RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+            <RadioButton
+                android:id="@+id/radioCreate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carete An Account"
+                android:layout_weight="1"/>
+            <RadioButton
+                android:id="@+id/radioLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Login"/>
+        </RadioGroup>-->
+        <FrameLayout
+            android:id="@+id/myframe"
+            android:layout_width="320dp"
+            android:layout_height="460dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="19dp"
+            >
+        </FrameLayout>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioLogin"
+            android:text="Login"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By signing in you agreeing to our terms listed in the legal information section."/>
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.loginpage.LoginIn">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <RadioButton
+            android:id="@+id/radioCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carete An Account"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/radioLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Login"/>
+    </RadioGroup>
+    <EditText
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:singleLine="true"
+        android:id="@+id/userName"
+        android:layout_below="@+id/SignUpImage"
+        android:hint="userName"
+        />
+
+    <EditText
+        android:id="@+id/userpass"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:singleLine="true"
+        android:hint="userPassword"
+        android:inputType="textPassword"
+        android:layout_below="@+id/userName"
+        android:layout_marginTop="25dp"/>
+    <Button
+        android:layout_marginTop="35dp"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:text="Login"
+        android:id="@+id/login"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:background="@color/colorAccent"
+        android:layout_below="@+id/userpass"/>
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/login"
+        android:layout_width="310dp"
+        android:layout_marginLeft="0dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/gotoForgetPassActivity"
+        android:text="forgetpassword"/>
+</LinearLayout>
+
+
+</FrameLayout>
